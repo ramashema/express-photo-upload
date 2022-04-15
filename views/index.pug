@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        title Photo Upload Example
+    body
+        h1 Photo upload example
+        form(action="/upload" method="post" enctype="multipart/form-data")
+            .form-group
+                label(for="image") Image
+                input#image(type="file", name="image" placeholder="upload your image")
+
+            .form-group
+                input#submit(type="submit")
